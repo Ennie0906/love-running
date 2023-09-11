@@ -12,16 +12,57 @@ body {
     flex-direction: column;
     color: #000;
     font-family: "Lato", sans-serif;
+    z-index: 99;
 }
 
 /* Header */
 header {
-    background-color: aqua;
+    background-color: #fff;
+    padding: 0 1rem;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0 2px 2px #000;
 
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
 }
 
 h1 {
     font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #52796F;
+
+}
+
+#menu {
+    list-style-type: none;
+    letter-spacing: 4px;
+    font-size: 110%;
+}
+
+#menu>li {
+    margin-bottom: 1rem;
+
+}
+
+.active {
+    border-bottom: 1px solid #000;
+}
+
+/* Dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 2px 2px #000;
+    left: 0;
+    padding: 0 1rem;
+    display: none;
 }
 
 /* Main content */
