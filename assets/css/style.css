@@ -15,6 +15,16 @@ body {
     z-index: 99;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #52796F;
+
+}
+
 /* Header */
 header {
     background-color: #fff;
@@ -34,13 +44,7 @@ header a {
     color: inherit;
 }
 
-h1 {
-    font-family: 'Abril Fatface', cursive;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #52796F;
 
-}
 
 #menu {
     list-style-type: none;
@@ -93,6 +97,23 @@ main {
     height: 600px;
     width: 100%;
     background: url("/assets/images/hero-image.webp") no-repeat center center/cover;
+    position: relative;
+}
+
+#cover-text {
+    background-color: rgba(252, 163, 17, 0.7);
+    font-size: 100%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text>h2,
+#cover-text>h3 {
+    color: #fff;
 }
 
 /* Footer */
@@ -143,6 +164,13 @@ main {
     /* Push down the main content  */
     main {
         margin-top: 79px;
+    }
+
+    /* Hero  */
+
+    #cover-text {
+        width: 300px;
+        right: 50px;
     }
 }
 
