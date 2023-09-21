@@ -25,6 +25,10 @@ h3 {
 
 }
 
+.hidden-heading {
+    display: none;
+}
+
 /* Header */
 header {
     background-color: #fff;
@@ -174,8 +178,10 @@ main {
     background-color: rgba(0, 0, 0, .6);
     text-align: center;
     padding: 15px;
+    /* This will not wrap less than 400px */
     flex-basis: 200px;
     flex-grow: 1;
+    border: 2px solid white;
 }
 
 #times h3 {
